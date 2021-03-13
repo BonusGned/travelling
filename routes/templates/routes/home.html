@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Find route{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            {% if routes %}
+                <h3> Route from{% if routes|length != 1 %}s {% endif %} c. {{ cities.from_city }} to
+                    c. {{ cities.to_city }}</h3>
+                <br>
+                {% for route in routes %}
+
+                    {% if forloop.first %}<h4>Shortest route</h4>{% endif %}
+                    <br>
+
+                    <h5>Travel time {{ route.total_time }}</h5>
+
+                    <table class="table">
+
+                        <thread>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">List of trains on this route</th>
+                            </tr>
+                        </thread>
+
+                        <tbody>
+                        {% for train in route.trains %}
+
+                            <tr>
+                                <th scope="row">{{ forloop.counter }}</th>
+                                <td>{{ train.name }} from {{ train.from_city.name }} to {{ train.to_city.name }}</td>
+                            </tr>
+
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                    <br><br>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <h1>Find route</h1>
+
+    {% url 'find_routes' as action %}
+
+    {% include 'include/form.html' with button='Find' aciton=action %}
+
+{% endblock %}
