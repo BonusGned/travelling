@@ -1,0 +1,163 @@
+[
+{
+  "model": "cities.city",
+  "pk": 1,
+  "fields": {
+    "name": "Marina"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 2,
+  "fields": {
+    "name": "Moscow"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 3,
+  "fields": {
+    "name": "Minsk"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 4,
+  "fields": {
+    "name": "Brest"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 5,
+  "fields": {
+    "name": "Grodno"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 6,
+  "fields": {
+    "name": "Amsterdam"
+  }
+},
+{
+  "model": "cities.city",
+  "pk": 7,
+  "fields": {
+    "name": "Singapur"
+  }
+},
+{
+  "model": "routes.route",
+  "pk": 1,
+  "fields": {
+    "name": "Moscow-Minsk",
+    "travel_times": 155,
+    "from_city": 3,
+    "to_city": 5,
+    "trains": [
+      3
+    ]
+  }
+},
+{
+  "model": "routes.route",
+  "pk": 2,
+  "fields": {
+    "name": "Bogdan",
+    "travel_times": 911,
+    "from_city": 6,
+    "to_city": 5,
+    "trains": [
+      5
+    ]
+  }
+},
+{
+  "model": "routes.route",
+  "pk": 5,
+  "fields": {
+    "name": "proverochka",
+    "travel_times": 65,
+    "from_city": 6,
+    "to_city": 5,
+    "trains": [
+      6
+    ]
+  }
+},
+{
+  "model": "routes.route",
+  "pk": 6,
+  "fields": {
+    "name": "dada",
+    "travel_times": 65,
+    "from_city": 6,
+    "to_city": 5,
+    "trains": [
+      6
+    ]
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 1,
+  "fields": {
+    "name": "Moscow-G",
+    "travel_time": 4,
+    "from_city": 4,
+    "to_city": 3
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 2,
+  "fields": {
+    "name": "German",
+    "travel_time": 3,
+    "from_city": 6,
+    "to_city": 3
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 3,
+  "fields": {
+    "name": "Logic",
+    "travel_time": 25,
+    "from_city": 3,
+    "to_city": 1
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 4,
+  "fields": {
+    "name": "Persik",
+    "travel_time": 55,
+    "from_city": 5,
+    "to_city": 1
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 5,
+  "fields": {
+    "name": "Test",
+    "travel_time": 55,
+    "from_city": 6,
+    "to_city": 4
+  }
+},
+{
+  "model": "trains.train",
+  "pk": 6,
+  "fields": {
+    "name": "Test1",
+    "travel_time": 65,
+    "from_city": 6,
+    "to_city": 5
+  }
+}
+]
